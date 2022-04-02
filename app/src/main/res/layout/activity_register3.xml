@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register3">
+
+    <ImageView
+        android:id="@+id/bg_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_start" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/icon_back"
+                android:transitionName="btn_back" />
+
+            <ImageView
+                android:id="@+id/chleartapp_text"
+                android:layout_width="150dp"
+                android:layout_height="102dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/logo_clheartapp"
+                android:transitionName="chleartapp_text" />
+
+            <TextView
+                android:id="@+id/signin_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chleartapp_text"
+                android:layout_marginLeft="20dp"
+                android:text="Create Account"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:text="Choose Address"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_til_prov"
+                style="@style/DropdownLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="Province"
+                android:textColorHint="@color/black"
+                app:endIconTint="@color/black"
+                app:hintTextColor="@color/black">
+
+                <AutoCompleteTextView
+                    android:id="@+id/signup_act_prov"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_til_city"
+                style="@style/DropdownLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="City/Municipality"
+                android:textColorHint="@color/black"
+                app:endIconTint="@color/black"
+                app:hintTextColor="@color/black">
+
+                <AutoCompleteTextView
+                    android:id="@+id/signup_act_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_til_brgy"
+                style="@style/DropdownLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="Barangay"
+                android:textColorHint="@color/black"
+                app:endIconTint="@color/black"
+                app:hintTextColor="@color/black">
+
+                <AutoCompleteTextView
+                    android:id="@+id/signup_act_brgy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:text="Submit"
+                android:textColor="@color/black"
+                android:transitionName="btn_next"
+                app:rippleColor="#c1dfff"
+                app:strokeColor="#9A9A9A" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

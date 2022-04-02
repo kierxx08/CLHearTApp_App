@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splash">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_start" />
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/logo_tanauan" />
+
+    <ImageView
+        android:id="@+id/chleartapp_text"
+        android:layout_width="300dp"
+        android:layout_height="203dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/logo_clheartapp"
+        android:transitionName="chleartapp_text"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/rainbow_wave"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/img_rainbow_waveline"
+        android:transitionName="@+id/rainbow_wave" />
+
+</RelativeLayout>

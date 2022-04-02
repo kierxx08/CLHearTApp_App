@@ -1,0 +1,32 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="CHLearTApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_00ACEC</item>
+        <item name="colorPrimaryDark">#828282</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="RatingBar" parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="colorControlActivated">@android:color/holo_orange_dark</item>
+        <item name="colorControlNormal">@android:color/holo_green_light</item>
+    </style>
+
+    <!-- For Loading Dialog -->
+    <style name="default_dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="colorAccent">@android:color/holo_red_light</item>
+    </style>
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/text_input_box_stroke</item>
+    </style>
+
+    <style name="DropdownLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@color/text_input_box_stroke</item>
+    </style>
+
+</resources>
