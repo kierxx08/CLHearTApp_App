@@ -1,4 +1,4 @@
-package com.kierasis.clheartapp;
+package com.kierasis.clheartapp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import com.kierasis.clheartapp.R;
 
 import java.util.Calendar;
 

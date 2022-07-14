@@ -15,6 +15,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Looper;
 import android.provider.Settings;
+import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -46,7 +47,7 @@ public class LocationDetectorActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main3);
 
         coordinates = findViewById(R.id.tv_coordinates);
         fulladdress = findViewById(R.id.tv_address);
@@ -55,6 +56,7 @@ public class LocationDetectorActivity2 extends AppCompatActivity {
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             requestForGPS();
+            Log.d("Mapping","UNA");
         }
 
         locationRequest = LocationRequest.create();
@@ -192,11 +194,14 @@ public class LocationDetectorActivity2 extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         startLocationUpdates();
+        Log.d("Mapping","PANGALAWA");
     }
 
     private void startLocationUpdates() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            requestForGPS();
+            //requestForGPS();
+            Toast.makeText(getApplicationContext(), "Permission Permanently Deny", Toast.LENGTH_SHORT).show();
+            Log.d("Mapping","PANGATLO");
         }
         fusedLocationClient.requestLocationUpdates(locationRequest,
                 locationCallback,

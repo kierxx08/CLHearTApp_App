@@ -1,4 +1,4 @@
-package com.kierasis.clheartapp;
+package com.kierasis.clheartapp.activity;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,7 +31,11 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.kierasis.clheartapp.BuildConfig;
+import com.kierasis.clheartapp.EndPoints;
+import com.kierasis.clheartapp.R;
 import com.kierasis.clheartapp.dbhelper.DatabaseHelper;
+import com.kierasis.clheartapp.my_singleton;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -45,7 +49,7 @@ public class splash extends AppCompatActivity {
     ImageView logo,wave;
     Animation animation;
     public static String versionName;
-    public SharedPreferences device_info;
+    public SharedPreferences device_info, user_info;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +61,7 @@ public class splash extends AppCompatActivity {
             w.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         }
 
+        user_info = getSharedPreferences("user-info", Context.MODE_PRIVATE);
         device_info = getSharedPreferences("device-info", MODE_PRIVATE);
 
         versionName = BuildConfig.VERSION_NAME;
@@ -277,8 +282,10 @@ public class splash extends AppCompatActivity {
                         }
                         //show_update();
 
-                        startActivity(new Intent(splash.this, login.class));
-                        finish();
+                        //startActivity(new Intent(splash.this, login.class));
+                        //finish();
+
+                        redirect_login();
 
                     }else{
                         error_desc = jsonObject.getString("error_desc");
@@ -434,8 +441,10 @@ public class splash extends AppCompatActivity {
                     case DialogInterface.BUTTON_POSITIVE:
                         // User clicked the Yes button
                         dialog.cancel();
-                        startActivity(new Intent(splash.this, login.class));
-                        finish();
+                        //startActivity(new Intent(splash.this, login.class));
+                        //finish();
+
+                        redirect_login();
                         break;
                 }
             }
@@ -464,12 +473,16 @@ public class splash extends AppCompatActivity {
                     update_app(latest_vrsn, vrsn_desc, vrsn_link);
                 }else{
                     Toast.makeText(splash.this, "No Internet Connection", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(splash.this, login.class));
-                    finish();
+                    //startActivity(new Intent(splash.this, login.class));
+                    //finish();
+
+                    redirect_login();
                 }
             }else{
-                startActivity(new Intent(splash.this, login.class));
-                finish();
+                //startActivity(new Intent(splash.this, login.class));
+                //finish();
+
+                redirect_login();
             }
 
         }else{
@@ -519,15 +532,25 @@ public class splash extends AppCompatActivity {
     }
 
     private void redirect_login(){
-        Intent intent = new Intent(getApplicationContext(),login.class);
+        String loginStatus = user_info.getString("login_state","");
 
-        Pair[] pairs = new  Pair[2];
+        if(loginStatus.equals("loggedin")){
+            if (Integer.parseInt(user_info.getString("user_InterestCount", "")) < 5) {
+                startActivity(new Intent(splash.this, personalisation.class));
+            } else {
+                startActivity(new Intent(splash.this, main.class));
+            }
+        }else {
+            Intent intent = new Intent(getApplicationContext(), login.class);
 
-        pairs[0] = new Pair<View, String>(logo, "chleartapp_text");
-        pairs[1] = new Pair<View, String>(wave, "rainbow_wave");
+            Pair[] pairs = new Pair[2];
 
-        ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(splash.this,pairs);
-        startActivity(intent,options.toBundle());
+            pairs[0] = new Pair<View, String>(logo, "chleartapp_text");
+            pairs[1] = new Pair<View, String>(wave, "rainbow_wave");
+
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(splash.this, pairs);
+            startActivity(intent, options.toBundle());
+        }
         finish();
     }
 

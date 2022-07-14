@@ -25,6 +25,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         this.dbPath = "/data/data/" + "com.kierasis.clheartapp" + "/databases/";
     }
 
+
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 

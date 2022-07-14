@@ -1,4 +1,4 @@
-package com.kierasis.clheartapp;
+package com.kierasis.clheartapp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -30,6 +30,9 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import com.kierasis.clheartapp.EndPoints;
+import com.kierasis.clheartapp.R;
+import com.kierasis.clheartapp.my_singleton;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -38,7 +41,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class register extends AppCompatActivity {
+public class register1 extends AppCompatActivity {
     public static Activity act_register1;
     ImageView back, logo;
     TextInputEditText username, fname, lname, email, phone, password;
@@ -53,7 +56,7 @@ public class register extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_register1);
         act_register1 = this;
 
         device_info = getSharedPreferences("device-info", MODE_PRIVATE);
@@ -210,7 +213,7 @@ public class register extends AppCompatActivity {
     private void signingup(String txt_username, String txt_fname, String txt_lname,
                            String txt_email, String txt_phone, String txt_password) {
 
-        final ProgressDialog progressDialog = new ProgressDialog(register.this, R.style.default_dialog);
+        final ProgressDialog progressDialog = new ProgressDialog(register1.this, R.style.default_dialog);
         progressDialog.setCancelable(false);
         progressDialog.setIndeterminate(false);
         progressDialog.setTitle("Checking Inputs");
@@ -229,7 +232,7 @@ public class register extends AppCompatActivity {
                     jsonObject = new JSONObject(response.toString());
                     success = jsonObject.getBoolean("success");
                     if(success) {
-                        //Toast.makeText(register.this, "Sign Up Success", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(register1.this, "Sign Up Success", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(),register2.class);
 
                         intent.putExtra("username", txt_username);
@@ -245,7 +248,7 @@ public class register extends AppCompatActivity {
                         pairs[1] = new Pair<View, String>(logo, "chleartapp_text");
                         pairs[2] = new Pair<View, String>(btn_next, "btn_next");
 
-                        ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(register.this,pairs);
+                        ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(register1.this,pairs);
                         startActivity(intent,options.toBundle());
 
                     }else{
@@ -269,7 +272,7 @@ public class register extends AppCompatActivity {
                         }
                         if(jsonObject.has("error_desc")){
                             if(!jsonObject.getString("error_desc").equals("error_in_form")) {
-                                Toast.makeText(register.this, jsonObject.getString("error_desc"), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(register1.this, jsonObject.getString("error_desc"), Toast.LENGTH_SHORT).show();
                             }
                         }
                     }
@@ -277,7 +280,7 @@ public class register extends AppCompatActivity {
                 } catch (JSONException e) {
                     e.printStackTrace();
                     progressDialog.dismiss();
-                    Toast.makeText(register.this, "signingup: JSON Error", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(register1.this, "signingup: JSON Error", Toast.LENGTH_SHORT).show();
                     Log.d("tag", "onErrorResponse: " + response);
                 }
 
@@ -286,7 +289,7 @@ public class register extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 progressDialog.dismiss();
-                Toast.makeText(register.this, "No Connection", Toast.LENGTH_SHORT).show();
+                Toast.makeText(register1.this, "No Connection", Toast.LENGTH_SHORT).show();
 
             }
         }){
@@ -306,7 +309,7 @@ public class register extends AppCompatActivity {
 
         };
         request.setRetryPolicy(new DefaultRetryPolicy(30000,DefaultRetryPolicy.DEFAULT_MAX_RETRIES,DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-        my_singleton.getInstance(register.this).addToRequestQueue(request);
+        my_singleton.getInstance(register1.this).addToRequestQueue(request);
 
     }
 

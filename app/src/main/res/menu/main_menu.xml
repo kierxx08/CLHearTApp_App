@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/icon_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_fullmap"
+            android:icon="@drawable/icon_map"
+            android:title="Full Map" />
+    </group>
+
+    <item android:title="Resources">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_resAll"
+                    android:title="All Resources"
+                    android:icon="@drawable/icon_all_resources"/>
+
+                <item
+                    android:id="@+id/nav_culP"
+                    android:title="Cultural Place"
+                    android:icon="@drawable/icon_place" />
+
+                <item
+                    android:id="@+id/nav_comEstab"
+                    android:title="Commercial Establishment"
+                    android:icon="@drawable/icon_commercial_building" />
+
+                <item
+                    android:id="@+id/nav_leisure"
+                    android:title="Leisure Park"
+                    android:icon="@drawable/icon_leisure" />
+
+                <item
+                    android:id="@+id/nav_exhibit"
+                    android:title="Exhibit"
+                    android:icon="@drawable/icon_exhibit" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Account">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/icon_profile"
+                    android:title="Profile"
+                    android:visible="false" />
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/icon_logout"
+                    android:title="Logout" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:title="About">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@drawable/icon_settings"
+                    android:title="Settings"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/icon_info"
+                    android:title="About"
+                    android:visible="true" />
+            </group>
+        </menu>
+    </item>
+</menu>

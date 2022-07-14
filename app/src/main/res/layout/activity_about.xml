@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.about">
+
+    <ImageView
+        android:id="@+id/about_cover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/img_tanauan_city_hall" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/about_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/about_cover"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-75dp"
+        android:src="@mipmap/clheartapp_icon_round"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_image"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/about_about_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="About:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/about_info_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="CLHear TApp help users in Tanauan City to search their desire places in Tanauan and find route of the places. This app help users view a great places recommended and review by other users."
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"  />
+
+        <TextView
+            android:id="@+id/about_version_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Version:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/about_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1.0"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about_develop_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developed By:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/about_develop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rosemarie Anciado\nKier Kaye Asis\nNeil Valentin Perez"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -3,14 +3,55 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/drawable-v24/icon_qrscanner.xml" value="0.2203125" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/drawable-v24/shape_radius_000.xml" value="0.2203125" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/drawable/ic_icon_rate.xml" value="0.2203125" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/drawable/icon_check.xml" value="0.2203125" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/drawable/icon_home.xml" value="0.1125" />
         <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/drawable/icon_key.xml" value="0.2203125" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/drawable/icon_logout.xml" value="0.1125" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/drawable/icon_profile.xml" value="0.1125" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/drawable/icon_qrscanner.xml" value="0.2203125" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/drawable/icon_settings.xml" value="0.1125" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/drawable/icon_speaker.xml" value="0.2203125" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/drawable/rounded_dialog.xml" value="0.2203125" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/activity_about.xml" value="0.25" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/activity_fullmap.xml" value="0.1585144927536232" />
         <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/activity_main.xml" value="0.2640449438202247" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/activity_main2.xml" value="0.5" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/activity_main3.xml" value="0.1" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/activity_personalisation.xml" value="0.25" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/activity_qrscan.xml" value="0.18432971014492755" />
         <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/activity_register1.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/activity_register2.xml" value="0.20588235294117646" />
         <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/activity_register3.xml" value="0.292259083728278" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/activity_resources_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/activity_resources_view.xml" value="0.25" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/activity_search_result.xml" value="0.16" />
         <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
         <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/bottom_sheet_dialog.xml" value="0.22" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/bottomsheetdialog_rate.xml" value="0.25" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/fragment_resources_about.xml" value="0.17798913043478262" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/fragment_resources_information.xml" value="0.33" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/fragment_resources_map.xml" value="0.17798913043478262" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/header.xml" value="0.33" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/icon_info.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/item_progressbar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/list_layout_product.xml" value="0.5" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/list_layout_resources_shimmer.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/list_layout_template_00.xml" value="0.42735042735042733" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/list_layout_template_01.xml" value="0.5" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/list_layout_template_02.xml" value="0.33" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/rate_bottomsheetdialog.xml" value="0.25" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/student_fragment_class_attendance.xml" value="0.17980072463768115" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/layout/student_fragment_class_information.xml" value="0.17980072463768115" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/menu/main_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/menu/main_menu2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/menu/search_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Kier/AndroidStudioProjects/CLHearTApp/app/src/main/res/mipmap-anydpi-v26/CLHearTapp_icon.xml" value="0.2203125" />
       </map>
     </option>
   </component>

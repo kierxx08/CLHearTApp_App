@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login">
+    tools:context=".activity.login">
 
     <ImageView
         android:layout_width="match_parent"
@@ -105,11 +105,12 @@
                 style="@style/Widget.AppCompat.CompoundButton.CheckBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
                 android:layout_centerVertical="true"
+                android:layout_gravity="right"
                 android:buttonTint="@color/black"
                 android:text="Remember Me"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:visibility="gone"/>
 
             <Button
                 android:id="@+id/btn_forgot"
@@ -121,7 +122,8 @@
                 android:layout_marginRight="20dp"
                 android:background="#00000000"
                 android:text="FORGOT PASSWORD?"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:visibility="gone"/>
 
 
 

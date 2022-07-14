@@ -1,32 +1,24 @@
-package com.kierasis.clheartapp;
+package com.kierasis.clheartapp.activity;
 
-import static com.kierasis.clheartapp.register.act_register1;
-import static com.kierasis.clheartapp.register2.act_register2;
+import static com.kierasis.clheartapp.activity.register1.act_register1;
+import static com.kierasis.clheartapp.activity.register2.act_register2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ActivityOptions;
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
-import android.graphics.Rect;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.ArrayMap;
 import android.util.Log;
-import android.util.Pair;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,7 +29,10 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.google.android.material.textfield.TextInputLayout;
+import com.kierasis.clheartapp.EndPoints;
+import com.kierasis.clheartapp.R;
 import com.kierasis.clheartapp.dbhelper.DBHelper;
+import com.kierasis.clheartapp.my_singleton;
 
 import org.json.JSONException;
 import org.json.JSONObject;

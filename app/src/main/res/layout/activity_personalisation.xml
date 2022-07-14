@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.personalisation">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="Choose your Interests"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:chipSpacingHorizontal="40dp"
+        android:layout_below="@id/text">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_landmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:checkable="true"
+                android:text="Landmark"
+                app:checkedIcon="@drawable/icon_check" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_cplace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:checkable="true"
+                android:text="Cultural Place"
+                app:checkedIcon="@drawable/icon_check" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:checkable="true"
+                android:text="Food"
+                app:checkedIcon="@drawable/icon_check" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_trending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:checkable="true"
+                android:text="Trending"
+                app:checkedIcon="@drawable/icon_check" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_resort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:checkable="true"
+                android:text="Resort"
+                app:checkedIcon="@drawable/icon_check" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:checkable="true"
+                android:text="New"
+                app:checkedIcon="@drawable/icon_check" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_photography"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:checkable="true"
+                android:text="Photography"
+                app:checkedIcon="@drawable/icon_check" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_painting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:checkable="true"
+                android:text="Painting"
+                app:checkedIcon="@drawable/icon_check" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_monument"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:checkable="true"
+                android:text="Monument"
+                app:checkedIcon="@drawable/icon_check" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_hotel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:checkable="true"
+                android:text="Hotel"
+                app:checkedIcon="@drawable/icon_check" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_fiesta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:checkable="true"
+                android:text="Fiesta"
+                app:checkedIcon="@drawable/icon_check" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_church"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:checkable="true"
+                android:text="Church"
+                app:checkedIcon="@drawable/icon_check" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_mall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:checkable="true"
+                android:text="Mall"
+                app:checkedIcon="@drawable/icon_check" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_museum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:checkable="true"
+                android:text="Museum"
+                app:checkedIcon="@drawable/icon_check" />
+
+        </LinearLayout>
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="20dp"
+            android:contentDescription="Sample"
+            app:backgroundTint="@android:color/white"
+            app:srcCompat="@drawable/icon_check"
+            app:tint="@android:color/holo_red_light" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

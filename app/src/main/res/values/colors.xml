@@ -7,4 +7,5 @@
 
     <color name="shimmer_placeholder">#dddddd</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="chip_normal">#ffe5e5e5</color>
 </resources>
