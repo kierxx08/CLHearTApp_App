@@ -1,4 +1,4 @@
-# CLHearTApp (Web)
+# CLHearTApp (Android App)
 
 
 ## Screenshots
